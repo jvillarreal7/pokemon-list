@@ -1,5 +1,5 @@
 """
-Unit tests for the generated Pokémon script.
+Unit tests for the generate Pokémon script.
 """
 
 import generate_pokemon as gp
