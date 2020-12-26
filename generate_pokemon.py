@@ -113,7 +113,7 @@ def parse_table(soup, start_gen, end_gen):
     start_index = pokes.index(GEN_STARTS_WITH[start_gen])
     end_index = pokes.index(GEN_ENDS_WITH[end_gen]) + 1
 
-    # Doesn't have to be ordered, just personal taste.
+    # Doesn't have to be ordered, just personal preference.
     unique_list = OrderedSet(pokes[start_index:end_index])
 
     if start_gen != end_gen:
