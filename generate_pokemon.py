@@ -13,6 +13,8 @@ from ordered_set import OrderedSet
 from exceptions import *
 import requests
 
+CURRENT_GEN = 8
+
 GEN_STARTS_WITH = {
     1: 'Bulbasaur',
     2: 'Chikorita',
@@ -62,8 +64,8 @@ def main():
             print("Start gen should be less than end gen.")
             raise StartGenHigherThanEndGenError
 
-        if start_gen > len(GEN_STARTS_WITH) or end_gen > len(GEN_ENDS_WITH):
-            print(f"Gens above {len(GEN_STARTS_WITH)} are not supported.")
+        if start_gen > CURRENT_GEN or end_gen > CURRENT_GEN:
+            print(f"Gens above {CURRENT_GEN} are not supported.")
             raise UnsupportedGenError
 
     except ValueError:
