@@ -2,9 +2,10 @@
 Script that returns a file containing a specified range of Pokémon (by gen) 
 separated by commas. Uses a Bulbapedia table as data source.
 
-Put this together quickly to play "who's that Pokémon" on skribbl.io with my friends.
-Got a little carried away making small improvements, since I thought somewhere, someone
-would find use in something like this. :)
+Put this together quickly to play "who's that (barely recognizable) Pokémon?"
+on skribbl.io with my friends using the generated file.
+Got a little carried away making small improvements, since I thought
+somewhere, someone would find use in something like this. :)
 """
 
 from bs4 import BeautifulSoup
