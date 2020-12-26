@@ -76,7 +76,7 @@ def main():
 
 def get_data(URL):
     """
-    Fetch data from Bulbapedia with BeautifulSoup.
+    Fetch data from Bulbapedia with requests and BeautifulSoup.
 
     params: URL (string)
     returns: soup (BeautifulSoup object)
